@@ -8,7 +8,7 @@ if (!isset($_SESSION['id'])) {
 
 $erro = "";
 
-// --- EXCLUIR ---
+// --- ExCLUIR -
 if (isset($_GET['excluir'])) {
     $id = (int) $_GET['excluir'];
     $conn->query("DELETE FROM produtos WHERE id = $id");
