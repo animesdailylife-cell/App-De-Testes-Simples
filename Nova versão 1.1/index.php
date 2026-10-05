@@ -16,7 +16,7 @@ if (isset($_GET['excluir'])) {
     exit;
 }
 
-// --- SALVAR (novo ou editar) ---
+// --- SALVAR (novo ou editar) ----
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $id    = (int) ($_POST['id'] ?? 0);
     $nome  = trim($_POST['nome']);

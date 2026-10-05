@@ -34,7 +34,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $stmt->bind_param("sss", $nome, $email, $senha_hash);
 
             if ($stmt->execute()) {
-                // Loga automaticamente
+                // Loga automaticamente.
                 $_SESSION['id']   = $stmt->insert_id;
                 $_SESSION['nome'] = $nome;
                 header("Location: index.php");

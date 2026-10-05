@@ -1,7 +1,7 @@
 <?php
 require "conexao.php";
 
-// logout
+// logout.
 if (isset($_GET['sair'])) {
     session_destroy();
     header("Location: login.php");

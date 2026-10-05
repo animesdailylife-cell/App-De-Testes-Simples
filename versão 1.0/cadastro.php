@@ -19,7 +19,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     } elseif ($senha !== $confirma) {
         $erro = "As senhas não coincidem.";
     } else {
-        // Verifica se o e-mail já existe
+        // Verifica se o e-mail já existe.
         $stmt = $conn->prepare("SELECT id FROM usuarios WHERE email = ?");
         $stmt->bind_param("s", $email);
         $stmt->execute();

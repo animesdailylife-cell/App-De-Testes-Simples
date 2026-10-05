@@ -21,5 +21,5 @@ $senha = password_hash("123456", PASSWORD_DEFAULT);
 $conn->query("INSERT IGNORE INTO usuarios (nome, email, senha)
               VALUES ('Admin', 'admin@teste.com', '$senha')");
 
-echo "OK! Usuário: admin@teste.com / senha: 123456<br>";
+echo "OK!! Usuário: admin@teste.com / senha: 123456<br>";
 echo "<a href='login.php'>Ir para o login</a>";

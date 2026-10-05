@@ -1,7 +1,7 @@
 <?php
-// ============================================================
+// =============================================================
 // 🔒 ENDPOINT AJAX — responde SEMPRE em JSON, ANTES de tudo
-// ============================================================
+// =============================================================
 if (isset($_GET['acao']) && $_GET['acao'] === 'rodar') {
     header('Content-Type: application/json; charset=utf-8');
     header('Cache-Control: no-store');
